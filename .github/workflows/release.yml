@@ -4,8 +4,9 @@
 name: Release Portfolio
 
 on:
-  pull_request:
-    branches: [ "master" ]
+  push:
+    branches:
+    - master
 
 jobs:
   build:
@@ -22,6 +23,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm install --global yarn
+    - name: Install Modules
+      run: yarn
     - name: Lint
       run: yarn lint
     - name: Build
