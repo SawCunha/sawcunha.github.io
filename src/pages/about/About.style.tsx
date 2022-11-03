@@ -9,7 +9,7 @@ const Container = styled(Paper)`
   align-items: flex-start;
 
   width: 85%;
-  height: inherit;
+  height: 100%;
 
   background-color: transparent;
 
@@ -17,4 +17,18 @@ const Container = styled(Paper)`
   margin-bottom: 1.5625rem;
 `;
 
-export { Container };
+const GrouText = styled(Paper)`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  width: 100%;
+  height: 100%;
+  margin-top: 0.9375rem;
+  background-color: transparent;
+`;
+
+export { Container, GrouText };

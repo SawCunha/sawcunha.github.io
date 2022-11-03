@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { SubTitle, Text } from '../text';
-import { Container, ProjectCard, GroupChip, Chip, Link } from './Project.style';
+import { Container, ProjectCard, GroupChip, Chip, Link, Title } from './Project.style';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 interface Props {
   technologies: string[];
@@ -18,9 +19,15 @@ export const Project: FunctionComponent<Props> = ({
   return (
     <Container item>
       <ProjectCard elevation={1}>
-        <Link href={url} underline="hover" target="_blank">
-          <SubTitle>{nameProject}</SubTitle>
-        </Link>
+        <Title elevation={0}>
+          <Link href={url} underline="hover" target="_blank">
+            <SubTitle>{nameProject}</SubTitle>
+          </Link>
+
+          <Link href={url} underline="hover" target="_blank">
+            <OpenInNewIcon />
+          </Link>
+        </Title>
         <GroupChip elevation={0}>
           {technologies.length > 0 &&
             technologies.map((technology) => <Chip key={technology} label={technology} />)}

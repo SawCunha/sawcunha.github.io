@@ -1,3 +1,4 @@
+import { Link } from '@mui/material';
 import React, { FunctionComponent } from 'react';
 import { Project } from '../../components/project';
 import { SubTitle } from '../../components/text';
@@ -26,12 +27,12 @@ export const Projects: FunctionComponent = (): React.ReactElement => {
           description="App Desenvolvido para lembra nosso Amigo Rafael de beber agua, Idealizado pelo Grupo: Cleiton E-sports"
           url="https://github.com/SawCunha/DiabeticsWater"
         />
-        <GridButton>
-          <Button href="https://github.com/SawCunha?tab=repositories" formTarget="_blank">
-            SEE ALL PROJECTS
-          </Button>
-        </GridButton>
       </GridProjects>
+      <GridButton>
+        <Link href="https://github.com/SawCunha?tab=repositories" target="_blank" underline="hover">
+          <Button>SEE ALL PROJECTS</Button>
+        </Link>
+      </GridButton>
     </Container>
   );
 };

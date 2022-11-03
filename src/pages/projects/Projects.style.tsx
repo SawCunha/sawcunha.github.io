@@ -25,12 +25,16 @@ const GridProjects = styled(Grid)`
   margin-bottom: 1.5625rem;
 `;
 
-const GridButton = styled(Grid)``;
+const GridButton = styled(Grid)`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
 
 const Button = styled(ButtonMUI)`
   background: linear-gradient(90deg, #00f5a0 0%, #00d9f5 100%);
   border-radius: 6px;
-  target: '_blank';
+  position: inherit;
 `;
 
 export { Container, GridProjects, GridButton, Button };

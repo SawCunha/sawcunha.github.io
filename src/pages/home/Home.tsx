@@ -14,13 +14,13 @@ export const Home: FunctionComponent = (): React.ReactElement => {
       <Header />
       <GroupHome>
         <Presentation />
-        <Divider />
+        <Divider marginRight={1} height="0.15rem" borderRadius={5} />
         <About />
-        <Divider light />
+        <Divider marginRight={1} height="0.15rem" borderRadius={5} />
         <Projects />
-        <Divider light />
+        <Divider marginRight={1} height="0.15rem" borderRadius={5} />
         <Skills />
-        <Divider light />
+        <Divider marginRight={1} height="0.15rem" borderRadius={5} />
       </GroupHome>
       <Footer />
     </Container>

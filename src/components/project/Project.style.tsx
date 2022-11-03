@@ -47,4 +47,15 @@ const Link = styled(LinkMUI)`
   color: ${({ theme }: any) => theme.palette.text.primary};
 `;
 
-export { Container, ProjectCard, GroupChip, Chip, Link };
+const Title = styled(Paper)`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+
+  background-color: transparent;
+  font-size: 0.75rem;
+`;
+
+export { Container, ProjectCard, GroupChip, Chip, Link, Title };
