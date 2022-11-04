@@ -5,7 +5,7 @@ import { Container, GrouText } from './About.style';
 
 export const About: FunctionComponent = (): React.ReactElement => {
   return (
-    <Container elevation={0}>
+    <Container elevation={0} id="AboutMe">
       <SubTitle>About</SubTitle>
       <GrouText elevation={0}>
         <Divider

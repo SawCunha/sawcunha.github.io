@@ -13,6 +13,11 @@ const Container = styled(ContainerMUI)`
   top: 0;
 
   background-color: ${({ theme }: any) => theme.palette.primary.main};
+
+  @media (min-width: 680px) {
+    padding-left: 6.25rem;
+    padding-right: 0;
+  }
 `;
 
 export { Container };

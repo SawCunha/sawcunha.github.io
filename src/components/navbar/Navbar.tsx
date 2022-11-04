@@ -5,14 +5,14 @@ import { Container, Link } from './Navbar.styles';
 export const Navbar: FunctionComponent = (): React.ReactElement => {
   return (
     <Container>
-      <Link href="#skills" underline="hover">
-        <Typography color="textPrimary">Skills</Typography>
+      <Link href="#AboutMe" underline="hover">
+        <Typography color="textPrimary">About</Typography>
       </Link>
-      <Link href="#projects" underline="hover">
+      <Link href="#Projects" underline="hover">
         <Typography color="textPrimary">Projects</Typography>
       </Link>
-      <Link href="#contactMe" underline="hover">
-        <Typography color="textPrimary">Contact me</Typography>
+      <Link href="#Skills" underline="hover">
+        <Typography color="textPrimary">Skills</Typography>
       </Link>
     </Container>
   );

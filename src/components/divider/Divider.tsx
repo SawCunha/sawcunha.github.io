@@ -1,4 +1,6 @@
 import React, { FunctionComponent } from 'react';
+import { DeviceType } from '../../model/types/DeviceType';
+import { getDeviceType } from '../../services/utils/TypeDevice';
 import { DividerStyle } from './Divider.style';
 
 interface Props {
@@ -18,6 +20,8 @@ export const Divider: FunctionComponent<Props> = ({
   width,
   orientation = 'horizontal'
 }: Props): React.ReactElement => {
+  const deviceType: DeviceType = getDeviceType();
+
   return (
     <DividerStyle
       light
@@ -25,6 +29,7 @@ export const Divider: FunctionComponent<Props> = ({
       variant="inset"
       orientation={orientation}
       sx={{ marginRight, height, borderRadius, width, marginLeft }}
+      devicetype={deviceType}
     />
   );
 };

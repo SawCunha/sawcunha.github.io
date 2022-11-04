@@ -5,7 +5,7 @@ import { Container, GridSkills } from './Skills.style';
 
 export const Skills: FunctionComponent = (): React.ReactElement => {
   return (
-    <Container elevation={0}>
+    <Container elevation={0} id="Skills">
       <SubTitle>Skills</SubTitle>
       <GridSkills container spacing={1}>
         <Skill icon="/icons/java.svg" nameSkill="Java" rating={4} />

@@ -7,6 +7,11 @@ const Container = styled(ContainerMUI)`
   align-content: center;
   justify-content: flex-end;
   align-items: center;
+
+  @media (min-width: 680px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 `;
 
 const Link = styled(LinkMUI)`

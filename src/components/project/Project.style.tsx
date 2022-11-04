@@ -7,7 +7,7 @@ const Container = styled(Grid)`
 
   margin-top: 1.5625rem;
   margin-bottom: 1.5625rem;
-  max-width: 300px;
+  max-width: 18.75rem;
 `;
 
 const ProjectCard = styled(Card)`
@@ -21,7 +21,7 @@ const ProjectCard = styled(Card)`
   padding: 0.8125rem;
 
   min-width: 9.375rem;
-  min-height: 200px;
+  min-height: 12.5rem;
 `;
 
 const GroupChip = styled(Paper)`

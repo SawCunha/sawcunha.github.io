@@ -33,7 +33,7 @@ const GridButton = styled(Grid)`
 
 const Button = styled(ButtonMUI)`
   background: linear-gradient(90deg, #00f5a0 0%, #00d9f5 100%);
-  border-radius: 6px;
+  border-radius: 0.375rem;
   position: inherit;
 `;
 

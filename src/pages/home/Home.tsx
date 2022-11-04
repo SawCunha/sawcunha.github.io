@@ -14,7 +14,7 @@ export const Home: FunctionComponent = (): React.ReactElement => {
       <Header />
       <GroupHome>
         <Presentation />
-        <Divider marginRight={1} height="0.15rem" borderRadius={5} />
+        <Divider marginRight={1} height="0.15rem" borderRadius={5} width={'85'} />
         <About />
         <Divider marginRight={1} height="0.15rem" borderRadius={5} />
         <Projects />
