@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react';
 import { PresentationImage } from '../../components/presentationImage';
 import { PresentationInfo } from '../../components/presentationInfo';
 import { DeviceType } from '../../model/types/DeviceType';
-import { getDeviceType } from '../../services/utils/TypeDevice';
+import { getDeviceType } from '../../utils/TypeDevice';
 import { Container } from './Presentation.style';
 
 export const Presentation: FunctionComponent = (): React.ReactElement => {

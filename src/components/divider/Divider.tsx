@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import { DeviceType } from '../../model/types/DeviceType';
-import { getDeviceType } from '../../services/utils/TypeDevice';
+import { getDeviceType } from '../../utils/TypeDevice';
 import { DividerStyle } from './Divider.style';
 
 interface Props {

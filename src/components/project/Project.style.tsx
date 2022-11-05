@@ -21,7 +21,7 @@ const ProjectCard = styled(Card)`
   padding: 0.8125rem;
 
   min-width: 9.375rem;
-  min-height: 12.5rem;
+  min-height: 18.5rem;
 `;
 
 const GroupChip = styled(Paper)`
