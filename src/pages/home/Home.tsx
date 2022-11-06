@@ -4,6 +4,7 @@ import { Footer } from '../../components/footer';
 import { Header } from '../../components/header';
 import { About } from '../about';
 import { Presentation } from '../presentation';
+import { Projects } from '../projects';
 import { Skills } from '../skills';
 import { Container, GroupHome } from './Home.style';
 
@@ -13,11 +14,13 @@ export const Home: FunctionComponent = (): React.ReactElement => {
       <Header />
       <GroupHome>
         <Presentation />
-        <Divider />
+        <Divider marginRight={1} height="0.15rem" borderRadius={5} width={'85'} />
         <About />
-        <Divider light />
+        <Divider marginRight={1} height="0.15rem" borderRadius={5} />
+        <Projects />
+        <Divider marginRight={1} height="0.15rem" borderRadius={5} />
         <Skills />
-        <Divider light />
+        <Divider marginRight={1} height="0.15rem" borderRadius={5} />
       </GroupHome>
       <Footer />
     </Container>

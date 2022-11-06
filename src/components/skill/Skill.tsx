@@ -1,8 +1,7 @@
-import { Rating } from '@mui/material';
 import React, { FunctionComponent } from 'react';
 import { Avatar } from '../avatar';
-import { SubTitle } from '../text';
-import { Container, GroupSkill } from './Skill.style';
+import { Text } from '../text';
+import { Container, GroupSkill, Rating } from './Skill.style';
 import StarIcon from '@mui/icons-material/Star';
 
 interface Props {
@@ -19,15 +18,20 @@ export const Skill: FunctionComponent<Props> = ({
   return (
     <Container item>
       <GroupSkill elevation={1}>
-        <Avatar variant="square" altAvatar={`Skill: ${nameSkill}`} urlAvatar={icon} />
-        <SubTitle>{nameSkill}</SubTitle>
+        <Avatar
+          width={40}
+          height={40}
+          variant="square"
+          altAvatar={`Skill: ${nameSkill}`}
+          urlAvatar={icon}
+        />
+        <Text>{nameSkill}</Text>
         <Rating
           name={nameSkill}
           value={rating}
           size="medium"
           precision={0.5}
           readOnly
-          style={{ position: 'inherit' }}
           icon={<StarIcon style={{ position: 'inherit' }} fontSize="inherit" />}
           emptyIcon={
             <StarIcon style={{ color: 'black', position: 'inherit' }} fontSize="inherit" />

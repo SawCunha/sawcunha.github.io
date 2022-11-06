@@ -8,7 +8,7 @@ const Container = styled(Paper)`
   flex-direction: column;
 
   max-width: 25rem;
-  margin: 25px 30px 25px 0;
+  margin: 1.5625rem 1.875rem 1.5625rem 0;
 
   background-color: transparent;
 `;

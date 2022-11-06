@@ -1,6 +1,11 @@
 import { Paper, styled } from '@mui/material';
+import { DeviceType } from '../../model/types/DeviceType';
 
-const Container = styled(Paper)`
+interface Props {
+  devicetype: string;
+}
+
+const Container = styled(Paper)<Props>`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -15,6 +20,8 @@ const Container = styled(Paper)`
 
   margin-top: 1.5625rem;
   margin-bottom: 1.5625rem;
+
+  ${({ devicetype }: any) => (devicetype === DeviceType.MOBILE ? 'justify-content: center;' : '')};
 `;
 
 export { Container };
