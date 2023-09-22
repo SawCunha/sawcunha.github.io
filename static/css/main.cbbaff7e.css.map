@@ -1,1 +1,1 @@
-{"version":3,"file":"static/css/main.cbbaff7e.css","mappings":"AAAA,qBACE,cACF","sources":["App.css"],"sourcesContent":["html, body, #root, .App {\n  height: inherit;\n}"],"names":[],"sourceRoot":""}
+{"version":3,"file":"static/css/main.cbbaff7e.css","mappings":"AAAA,qBACE,cACF","sources":["App.css"],"sourcesContent":["html, body, #root, .App {\r\n  height: inherit;\r\n}"],"names":[],"sourceRoot":""}
