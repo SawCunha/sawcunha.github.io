@@ -1,8 +1,8 @@
 {
-  "name": "developer_portfolio",
+  "name": "portfolio",
   "version": "1.0.0",
   "private": false,
-  "homepage": "https://sawcunha.github.io/",
+  "homepage": "https://sawcunha.github.io",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
