@@ -2,7 +2,7 @@
   "name": "developer_portfolio",
   "version": "1.0.0",
   "private": false,
-  "homepage": "https://sawcunha.github.io/developer_portfolio/",
+  "homepage": "http://sawcunha.insidesoftwares.com.br",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
