@@ -4,7 +4,7 @@ env:
   jest: true
 extends:
   - plugin:react/recommended
-  - standard-with-typescript
+  - eslint-config-love
   - eslint:recommended
   - plugin:react/recommended
   - plugin:prettier/recommended
