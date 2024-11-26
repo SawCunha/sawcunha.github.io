@@ -22,8 +22,8 @@ export const projects: Project[] = [
   },
   {
     technologies: ['React', 'MUI'],
-    name: 'Portfolio SawCunha',
-    description: 'Projeto da criação do Portfolio em React e MUI.',
+    name: 'Portfólio SawCunha',
+    description: 'Projeto da criação do Portfólio em React e MUI.',
     url: 'https://github.com/SawCunha/developer_portfolio'
   },
   {

@@ -18,17 +18,17 @@ export const skills: Skill[] = [
   {
     icon: '/icons/spring.svg',
     name: 'Spring',
-    rating: 2.5
+    rating: 3
   },
   {
     icon: '/icons/android.svg',
     name: 'Android',
-    rating: 3
+    rating: 2
   },
   {
     icon: '/icons/docker.svg',
     name: 'Docker',
-    rating: 3
+    rating: 3.5
   },
   {
     icon: '/icons/jest.svg',
@@ -38,12 +38,12 @@ export const skills: Skill[] = [
   {
     icon: '/icons/react.svg',
     name: 'React',
-    rating: 3
+    rating: 2.5
   },
   {
     icon: '/icons/reactRedux.svg',
     name: 'Redux',
-    rating: 3
+    rating: 2.5
   },
   {
     icon: '/icons/typeScript.svg',
@@ -53,7 +53,7 @@ export const skills: Skill[] = [
   {
     icon: '/icons/cleanCode.svg',
     name: 'Clean Code',
-    rating: 2.5
+    rating: 3
   },
   {
     icon: '/icons/jUnit.svg',
@@ -63,6 +63,6 @@ export const skills: Skill[] = [
   {
     icon: '/icons/python.svg',
     name: 'Python',
-    rating: 2
+    rating: 2.5
   }
 ];

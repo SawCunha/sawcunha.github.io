@@ -9,16 +9,22 @@ export const Experiences: FunctionComponent = (): React.ReactElement => {
     <Container elevation={0} id="ExperienceMe">
       <SubTitle>{allExperiences.title}</SubTitle>
 
-      <GrouText elevation={0}>
-        <Divider
-          marginRight={1}
-          marginLeft={0}
-          width={'0.625rem'}
-          borderRadius={5}
-          orientation={'vertical'}
-        />
-        <Text>{allExperiences.experiences[0].description}</Text>
-      </GrouText>
+      {
+        allExperiences.experiences.map(experience => 
+          <GrouText elevation={0}>
+            <Divider
+              marginRight={1}
+              marginLeft={0}
+              width={'0.625rem'}
+              borderRadius={5}
+              orientation={'vertical'}
+            />
+            <Text>{experience.description}</Text>
+          </GrouText>
+        )
+      }
+
+      
     </Container>
   );
 };
