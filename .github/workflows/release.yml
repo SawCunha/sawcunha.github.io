@@ -29,5 +29,9 @@ jobs:
       run: yarn lint
     - name: Build
       run: yarn build
+    - name: Configure Git
+      run: |
+        git config --global user.email "samukasaww@live.com"
+        git config --global user.name "Samuel Cunha"
     - name: Deploy
       run: yarn deploy
