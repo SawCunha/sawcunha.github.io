@@ -20,6 +20,7 @@ const Container = styled(Paper)`
 const GridProjects = styled(Grid)`
   height: inherit;
   justify-content: center;
+  align-items: stretch;
 
   background-color: transparent;
   margin-bottom: 1.5625rem;

@@ -3,16 +3,17 @@ import { styled, Typography } from '@mui/material';
 const Title = styled(Typography)`
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 600;
-  font-size: 2.563rem;
-  line-height: 5.5rem;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.5rem;
 `;
 
 const SubTitle = styled(Typography)`
+  font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 1.3875rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
 `;
 
 const Text = styled(Typography)`

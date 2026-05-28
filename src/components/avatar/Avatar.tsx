@@ -1,5 +1,5 @@
 import { Avatar as AvatarMUI } from '@mui/material';
-import React, { FunctionComponent } from 'react';
+import React, { type FunctionComponent } from 'react';
 
 interface Props {
   altAvatar: string;
@@ -17,17 +17,11 @@ export const Avatar: FunctionComponent<Props> = ({
   height = 60,
   margin = 0.8,
   variant = 'circular'
-}): React.ReactElement => {
-  const getPublicUrl = (): string => {
-    return process.env.PUBLIC_URL != null ? process.env.PUBLIC_URL : '';
-  };
-
-  return (
-    <AvatarMUI
-      alt={altAvatar}
-      src={`${getPublicUrl()}${urlAvatar}`}
-      sx={{ width, height, margin, position: 'inherit' }}
-      variant={variant}
-    />
-  );
-};
+}): React.ReactElement => (
+  <AvatarMUI
+    alt={altAvatar}
+    src={urlAvatar}
+    sx={{ width, height, margin, position: 'inherit' }}
+    variant={variant}
+  />
+);

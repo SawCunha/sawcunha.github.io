@@ -1,5 +1,5 @@
-import React, { FunctionComponent } from 'react';
-import { DeviceType } from '../../model/types/DeviceType';
+import React, { type FunctionComponent } from 'react';
+import type { DeviceType } from '../../model/types/DeviceType';
 import { getDeviceType } from '../../utils/TypeDevice';
 import { DividerStyle } from './Divider.style';
 
@@ -11,6 +11,7 @@ interface Props {
   borderRadius?: number;
   width?: string;
   orientation?: 'vertical' | 'horizontal';
+  current?: boolean;
 }
 
 export const Divider: FunctionComponent<Props> = ({
@@ -20,7 +21,8 @@ export const Divider: FunctionComponent<Props> = ({
   marginTop,
   borderRadius,
   width,
-  orientation = 'horizontal'
+  orientation = 'horizontal',
+  current
 }: Props): React.ReactElement => {
   const deviceType: DeviceType = getDeviceType();
 
@@ -28,11 +30,11 @@ export const Divider: FunctionComponent<Props> = ({
     <DividerStyle
       flexItem
       variant="inset"
-      marginTop={marginTop}
+      $marginTop={marginTop}
       orientation={orientation}
-      
       sx={{ marginRight, height, borderRadius, width, marginLeft }}
-      devicetype={deviceType}
+      $devicetype={deviceType}
+      $current={current}
     />
   );
 };

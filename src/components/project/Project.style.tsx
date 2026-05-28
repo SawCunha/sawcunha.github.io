@@ -2,6 +2,7 @@ import { Card, Grid, Paper, styled, Chip as ChipMUI, Link as LinkMUI } from '@mu
 
 const Container = styled(Grid)`
   height: inherit;
+  display: flex !important;
 
   background-color: transparent;
 
@@ -14,14 +15,14 @@ const ProjectCard = styled(Card)`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
-  align-content: space-around;
-  background: linear-gradient(90deg, #00f5a01f 0%, #00d9f526 100%);
+  justify-content: space-between;
+  background: transparent;
+  border: 1px solid rgba(128, 219, 217, 0.15);
   border-radius: 0.9375rem;
   padding: 0.8125rem;
+  width: 100%;
 
   min-width: 9.375rem;
-  min-height: 18.5rem;
 `;
 
 const GroupChip = styled(Paper)`
