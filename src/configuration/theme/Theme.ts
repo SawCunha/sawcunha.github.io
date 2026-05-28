@@ -18,7 +18,7 @@ let theme = createTheme({
   },
   typography: {
     allVariants: {
-      fontFamily: 'Tinos'
+      fontFamily: 'Montserrat'
     }
   }
 });

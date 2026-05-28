@@ -7,30 +7,24 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    technologies: ['Java', 'Spring Boot', 'Redis', 'Couchbase'],
-    name: 'Jdempotent',
-    description: `Projeto com foco para obter Idempotência nas APIs e nas integrações com Mensageria.
-      Com funcionamento para projetos springs atendendo hoje 2 banco de dados no SQL sendo: Redis e Couchbase.`,
-    url: 'https://github.com/SawCunha/Jdempotent'
-  },
-  {
-    technologies: ['Java', 'Android', 'Node', 'JavaScript', 'Express'],
-    name: 'Projeto SINE',
-    description: `Projeto criado na faculdade, para criação de Aplicativo para exibição de vagas de emprego do Brasil. 
-      Onde foi criado API para acesso às informações do Site Nacional de Empregos (SINE) e o Aplicativo Android para consumir a API.`,
-    url: 'https://github.com/SawCunha/Projeto_SINE'
-  },
-  {
-    technologies: ['React', 'MUI'],
-    name: 'Portfólio SawCunha',
-    description: 'Projeto da criação do Portfólio em React e MUI.',
-    url: 'https://github.com/SawCunha/developer_portfolio'
-  },
-  {
-    technologies: ['Java', 'String Boot', 'Feing'],
-    name: 'Trabalha Brasil API',
+    technologies: ['Java 25', 'Spring Boot 4', 'Open Source'],
+    name: 'SawCunha Open System',
     description:
-      'Esté projeto tem como intuito de utilizar a API do Trabalha Brasil a partir do framework "Feign".',
-    url: 'https://github.com/SawCunha/TrabalhaBrasilAPI'
+      'Organização open source focada na criação de bibliotecas, frameworks e sistemas para resolver problemas reais. Reúne projetos como Foundation (infraestrutura compartilhada) e BOM (gerenciamento de dependências) para construir uma plataforma coesa e reutilizável.',
+    url: 'https://github.com/SawCunhaOS'
+  },
+  {
+    technologies: ['Java 25', 'Maven', 'Spring Boot 4'],
+    name: 'SawCunhaOS BOM',
+    description:
+      'Bill of Materials (BOM) para gerenciamento centralizado de dependências nos projetos SCOS. Garante consistência de versões entre todos os módulos da plataforma. Publicado no Maven Central.',
+    url: 'https://github.com/SawCunhaOS/sawcunha-open-system-bom'
+  },
+  {
+    technologies: ['Java 25', 'Spring Boot 4', 'Shell'],
+    name: 'SawCunhaOS Foundation',
+    description:
+      'Framework de fundação com infraestrutura compartilhada, utilitários de integração, auditoria, tratamento de exceções, caching e componentes transversais para todos os projetos SCOS.',
+    url: 'https://github.com/SawCunhaOS/SawCunhaOS-Foundation'
   }
 ];

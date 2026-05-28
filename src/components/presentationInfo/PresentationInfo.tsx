@@ -1,14 +1,13 @@
-import React, { FunctionComponent } from 'react';
+import React, { type FunctionComponent } from 'react';
 import { presentation } from '../../model/Presentation';
-import { SubTitle, Title, Text } from '../text';
-import { Container } from './PresentationInfo.style';
+import { Text } from '../text';
+import { Container, Name, Office, Nickname } from './PresentationInfo.style';
 
-export const PresentationInfo: FunctionComponent = (): React.ReactElement => {
-  return (
-    <Container elevation={0}>
-      <SubTitle color="textSecondary">{presentation.office}</SubTitle>
-      <Title color="textPrimary">{presentation.name}</Title>
-      <Text color="textSecondary">{presentation.description}</Text>
-    </Container>
-  );
-};
+export const PresentationInfo: FunctionComponent = (): React.ReactElement => (
+  <Container elevation={0}>
+    <Name>{presentation.name}</Name>
+    <Office>{presentation.office}</Office>
+    <Text color="textSecondary">{presentation.description}</Text>
+    <Nickname>@{presentation.nickname}</Nickname>
+  </Container>
+);

@@ -1,6 +1,6 @@
-import { SvgIconTypeMap } from '@mui/material';
-import { OverridableComponent } from '@mui/material/OverridableComponent';
-import React, { FunctionComponent } from 'react';
+import type { SvgIconTypeMap } from '@mui/material';
+import type { OverridableComponent } from '@mui/material/OverridableComponent';
+import React, { type FunctionComponent } from 'react';
 import { Link } from './IconSocialMedia.style';
 
 interface Props {
@@ -11,10 +11,8 @@ interface Props {
 export const IconSocialMedia: FunctionComponent<Props> = ({
   Icon,
   link
-}: Props): React.ReactElement => {
-  return (
-    <Link href={link} underline="hover" target="_blank">
-      {<Icon sx={{ width: 30, height: 30, margin: 0.5 }} color="secondary" />}
-    </Link>
-  );
-};
+}: Props): React.ReactElement => (
+  <Link href={link} underline="hover" target="_blank">
+    {<Icon sx={{ width: 30, height: 30, margin: 0.5 }} color="secondary" />}
+  </Link>
+);

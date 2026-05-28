@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React, { type FunctionComponent } from 'react';
 import { SubTitle, Text } from '../text';
 import { Container, ProjectCard, GroupChip, Chip, Link, Title } from './Project.style';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
@@ -15,25 +15,23 @@ export const Project: FunctionComponent<Props> = ({
   nameProject,
   description,
   url
-}: Props): React.ReactElement => {
-  return (
-    <Container item>
-      <ProjectCard elevation={1}>
-        <Title elevation={0}>
-          <Link href={url} underline="hover" target="_blank">
-            <SubTitle>{nameProject}</SubTitle>
-          </Link>
+}: Props): React.ReactElement => (
+  <Container item>
+    <ProjectCard elevation={1}>
+      <Title elevation={0}>
+        <Link href={url} underline="hover" target="_blank">
+          <SubTitle>{nameProject}</SubTitle>
+        </Link>
 
-          <Link href={url} underline="hover" target="_blank">
-            <OpenInNewIcon />
-          </Link>
-        </Title>
-        <GroupChip elevation={0}>
-          {technologies.length > 0 &&
-            technologies.map((technology) => <Chip key={technology} label={technology} />)}
-        </GroupChip>
-        <Text>{description}</Text>
-      </ProjectCard>
-    </Container>
-  );
-};
+        <Link href={url} underline="hover" target="_blank">
+          <OpenInNewIcon />
+        </Link>
+      </Title>
+      <Text>{description}</Text>
+      <GroupChip elevation={0}>
+        {technologies.length > 0 &&
+          technologies.map((technology) => <Chip key={technology} label={technology} />)}
+      </GroupChip>
+    </ProjectCard>
+  </Container>
+);

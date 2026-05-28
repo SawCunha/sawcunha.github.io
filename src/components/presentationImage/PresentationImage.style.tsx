@@ -2,7 +2,7 @@ import { Paper, styled } from '@mui/material';
 import { DeviceType } from '../../model/types/DeviceType';
 
 interface Props {
-  devicetype: string;
+  $devicetype: DeviceType;
 }
 
 const Container = styled(Paper)<Props>`
@@ -17,7 +17,7 @@ const Container = styled(Paper)<Props>`
 
   background-color: transparent;
 
-  ${({ devicetype }: any) => (devicetype === DeviceType.MOBILE ? 'margin: 0;' : '')};
+  ${({ $devicetype }) => ($devicetype === DeviceType.MOBILE ? 'margin: 0;' : '')};
 `;
 
 export { Container };
