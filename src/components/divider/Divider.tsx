@@ -7,6 +7,7 @@ interface Props {
   height?: string;
   marginRight?: number;
   marginLeft?: number;
+  marginTop?: number;
   borderRadius?: number;
   width?: string;
   orientation?: 'vertical' | 'horizontal';
@@ -16,6 +17,7 @@ export const Divider: FunctionComponent<Props> = ({
   height,
   marginRight,
   marginLeft,
+  marginTop,
   borderRadius,
   width,
   orientation = 'horizontal'
@@ -24,10 +26,11 @@ export const Divider: FunctionComponent<Props> = ({
 
   return (
     <DividerStyle
-      light
       flexItem
       variant="inset"
+      marginTop={marginTop}
       orientation={orientation}
+      
       sx={{ marginRight, height, borderRadius, width, marginLeft }}
       devicetype={deviceType}
     />
