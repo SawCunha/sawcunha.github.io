@@ -1,4 +1,5 @@
 import { styled, Typography } from '@mui/material';
+import type { ElementType } from 'react';
 
 const Title = styled(Typography)`
   font-family: 'Montserrat';
@@ -8,7 +9,7 @@ const Title = styled(Typography)`
   line-height: 2.5rem;
 `;
 
-const SubTitle = styled(Typography)`
+const SubTitle = styled(Typography)<{ component?: ElementType }>`
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;

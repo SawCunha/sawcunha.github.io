@@ -1,4 +1,4 @@
-import { Grid, styled, Paper } from '@mui/material';
+import { Box, Grid, styled, Paper } from '@mui/material';
 
 const Container = styled(Paper)`
   display: flex;
@@ -17,6 +17,11 @@ const Container = styled(Paper)`
   margin-bottom: 1.5625rem;
 `;
 
+const CategoryGroup = styled(Box)`
+  width: 100%;
+  margin-top: 0.9375rem;
+`;
+
 const GridSkills = styled(Grid)`
   height: inherit;
   justify-content: center;
@@ -25,4 +30,4 @@ const GridSkills = styled(Grid)`
   margin-bottom: 1.5625rem;
 `;
 
-export { Container, GridSkills };
+export { CategoryGroup, Container, GridSkills };

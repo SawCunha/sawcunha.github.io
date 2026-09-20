@@ -42,6 +42,7 @@ const Chip = styled(ChipMUI)`
   margin: 0.0625rem 0.3125rem;
   border-radius: 0.4375rem;
   height: 1.5625rem;
+  white-space: nowrap;
 `;
 
 const Link = styled(LinkMUI)`

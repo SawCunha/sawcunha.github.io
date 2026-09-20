@@ -2,7 +2,8 @@ import React, { type FunctionComponent } from 'react';
 import { Divider } from '../../components/divider';
 import { SubTitle, Text } from '../../components/text';
 import { about } from '../../model/About';
-import { Container, GrouText } from './About.style';
+import { SocialLinks } from '../../components/socialLinks';
+import { Container, GrouText, SocialGroup } from './About.style';
 
 export const About: FunctionComponent = (): React.ReactElement => (
   <Container elevation={0} id="AboutMe">
@@ -17,5 +18,8 @@ export const About: FunctionComponent = (): React.ReactElement => (
       />
       <Text>{about.description}</Text>
     </GrouText>
+    <SocialGroup>
+      <SocialLinks />
+    </SocialGroup>
   </Container>
 );

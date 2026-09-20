@@ -1,4 +1,4 @@
-import { Chip, Paper, styled } from '@mui/material';
+import { Box, Chip, Paper, styled } from '@mui/material';
 
 const Container = styled(Paper)`
   display: flex;
@@ -37,8 +37,16 @@ const CurrentBadge = styled(Chip)`
   height: 1.25rem;
   font-size: 0.6875rem;
   font-weight: 600;
-  margin-bottom: 0.375rem;
   border-radius: 0.25rem;
+`;
+
+const Header = styled(Box)`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 0.75rem;
+  margin-bottom: 0.375rem;
 `;
 
 const TextGroup = styled(Paper)`
@@ -49,4 +57,4 @@ const TextGroup = styled(Paper)`
   width: 100%;
 `;
 
-export { Container, GrouText, CurrentBadge, TextGroup };
+export { Container, GrouText, CurrentBadge, Header, TextGroup };

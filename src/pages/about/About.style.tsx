@@ -1,4 +1,4 @@
-import { Paper, styled } from '@mui/material';
+import { Box, Paper, styled } from '@mui/material';
 
 const Container = styled(Paper)`
   display: flex;
@@ -31,4 +31,14 @@ const GrouText = styled(Paper)`
   background-color: transparent;
 `;
 
-export { Container, GrouText };
+const SocialGroup = styled(Box)`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.9375rem;
+`;
+
+export { Container, GrouText, SocialGroup };

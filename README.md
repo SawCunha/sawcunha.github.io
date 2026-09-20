@@ -31,10 +31,10 @@ yarn deploy      # gh-pages deploy
 ## Seções
 
 - **Presentation** — nome, cargo, bio, @nickname
-- **About** — texto pessoal
-- **Experiences** — experiências profissionais
+- **About** — texto pessoal e links de redes sociais
+- **Experiences** — experiências profissionais, com empresa, cargo e período
 - **Projects** — projetos com tecnologias e links
-- **Skills** — grid de tecnologias
+- **Skills** — tecnologias agrupadas por categoria
 
 ## Segurança
 

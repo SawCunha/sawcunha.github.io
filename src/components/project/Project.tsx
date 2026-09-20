@@ -19,12 +19,17 @@ export const Project: FunctionComponent<Props> = ({
   <Container item>
     <ProjectCard elevation={1}>
       <Title elevation={0}>
-        <Link href={url} underline="hover" target="_blank">
+        <Link href={url} underline="hover" target="_blank" rel="noopener noreferrer">
           <SubTitle>{nameProject}</SubTitle>
         </Link>
 
-        <Link href={url} underline="hover" target="_blank">
-          <OpenInNewIcon />
+        <Link
+          href={url}
+          underline="hover"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Abrir ${nameProject} no GitHub`}>
+          <OpenInNewIcon aria-hidden />
         </Link>
       </Title>
       <Text>{description}</Text>

@@ -74,5 +74,5 @@
 - [x] 10.2 `yarn build` — zero erros, build em 1.15s
 - [x] 10.3 `yarn test` — vitest passa (sem arquivos de teste, passWithNoTests: true)
 - [x] 10.4 `yarn lint` — zero erros (15 warnings aceitáveis: Grid deprecated, any em templates)
-- [ ] 10.5 Verificar no browser: paleta `#00001c` bg, cards com borda sutil, sem star rating, project card desc antes de chips, Montserrat em tudo, Presentation com hierarquia name→office→desc→@nickname, Experiences renderiza corretamente
-- [ ] 10.6 Verificar deploy em `sawcunha.sawcunhaos.com.br` — CNAME preservado, site acessível
+- [x] 10.5 Verificar no browser: paleta `#00001c` bg, cards com borda sutil, sem star rating, project card desc antes de chips, Montserrat em tudo, Presentation com hierarquia name→office→desc→@nickname, Experiences renderiza corretamente
+- [x] 10.6 Verificar deploy em `sawcunha.sawcunhaos.com.br` — CNAME preservado, site acessível

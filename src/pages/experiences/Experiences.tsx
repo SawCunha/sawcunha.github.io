@@ -2,7 +2,7 @@ import React, { type FunctionComponent } from 'react';
 import { Divider } from '../../components/divider';
 import { allExperiences } from '../../model/Experience';
 import { SubTitle, Text } from '../../components/text';
-import { Container, CurrentBadge, GrouText, TextGroup } from './Experiences.style';
+import { Container, CurrentBadge, GrouText, Header, TextGroup } from './Experiences.style';
 
 export const Experiences: FunctionComponent = (): React.ReactElement => (
   <Container elevation={0} id="Experiences">
@@ -19,7 +19,15 @@ export const Experiences: FunctionComponent = (): React.ReactElement => (
           current={experience.current}
         />
         <TextGroup elevation={0}>
-          {experience.current === true && <CurrentBadge label="Atual" size="small" />}
+          <Header>
+            <SubTitle component="h3">{experience.company}</SubTitle>
+            {experience.current === true && <CurrentBadge label="Atual" size="small" />}
+          </Header>
+          <Text color="textSecondary" sx={{ textAlign: 'left' }}>
+            {experience.role === undefined
+              ? experience.period
+              : `${experience.role} · ${experience.period}`}
+          </Text>
           <Text>{experience.description}</Text>
         </TextGroup>
       </GrouText>

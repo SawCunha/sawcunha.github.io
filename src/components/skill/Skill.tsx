@@ -11,13 +11,7 @@ interface Props {
 export const Skill: FunctionComponent<Props> = ({ icon, nameSkill }: Props): React.ReactElement => (
   <Container item>
     <GroupSkill elevation={0}>
-      <Avatar
-        width={40}
-        height={40}
-        variant="square"
-        altAvatar={`Skill: ${nameSkill}`}
-        urlAvatar={icon}
-      />
+      <Avatar width={40} height={40} variant="square" altAvatar="" urlAvatar={icon} />
       <Text>{nameSkill}</Text>
     </GroupSkill>
   </Container>

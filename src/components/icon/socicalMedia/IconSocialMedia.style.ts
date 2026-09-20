@@ -7,6 +7,8 @@ const Link = styled(LinkMUI)`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
 `;
 
 export { Link };
